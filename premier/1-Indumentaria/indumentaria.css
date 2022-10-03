@@ -1,0 +1,89 @@
+body{
+    background-color: #293c4b;
+}
+
+#logo{
+    display: none;
+}
+
+#home{
+    margin-top: 3px;
+}
+
+#dropcategorias{
+    height: 30px;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+#textodropcatego{
+    margin-top: -4px;
+}
+
+
+.inducards{
+
+    display: grid;
+    width: fit-content;
+    position: absolute;
+    grid-template-columns: repeat(4, 310px);
+    margin-top: 60px;
+    margin-left: 90px;
+}
+
+.card{
+    margin-top: 10px;
+}
+
+#imgcompucard{
+    width: 286px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.inducardscelu{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+
+
+    body{
+        background-color: black;
+    }
+
+    #logo{
+        position: absolute;
+        display: block;
+        width: 80px;
+        height: 30px;
+        border-radius: 10px;
+        margin-top: -28px;
+        margin-left: 7%;
+        z-index: 99999999999;
+
+    }
+
+    .inducards{
+        display: none;
+    }
+
+    .inducardscelu{
+        border: 1px solid rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 211px 211px ;
+        grid-template-rows: repeat(5,251px) ;
+        width: fit-content;
+        position: absolute;
+        margin-top: 50px;
+        background-color: rgb(0, 0, 0);
+        margin-left: -2%;
+    }
+
+    
+    .imgindumentaria{
+        width: 210px;
+        height: 250px;
+        border-radius: 1vh;
+    }
+}
